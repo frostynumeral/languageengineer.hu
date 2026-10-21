@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SchrödingersCAT · nyílt forráskódú fordítástámogató program</title>
+    <meta name="description" content="A SchrödingersCAT nyílt forráskódú fordítástámogató (CAT) program: adatvesztés nélküli XLIFF 2-szerkesztő fordítómemóriával, terminológiai adatbázissal és minőségellenőrzéssel, Windowsra, Linuxra és macOS-re.">
+    <link rel="canonical" href="https://languageengineer.hu/hu/schrodingerscat/">
+    <link rel="alternate" hreflang="en" href="https://languageengineer.hu/schrodingerscat/">
+    <link rel="alternate" hreflang="hu" href="https://languageengineer.hu/hu/schrodingerscat/">
+    <link rel="alternate" hreflang="x-default" href="https://languageengineer.hu/schrodingerscat/">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <a class="skip" href="#main">Ugrás a tartalomra</a>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="/hu/">languageengineer.hu</a>
+            <nav aria-label="Fő navigáció">
+                <a href="/hu/">Kezdőlap</a>
+                <a href="/hu/schrodingerscat/" aria-current="page">SchrödingersCAT</a>
+                <a class="lang" href="/schrodingerscat/" hreflang="en" lang="en">English</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="wrap">
+            <h1>SchrödingersCAT</h1>
+            <p class="lead">Nyílt forráskódú fordítástámogató program, amely soha nem veszíti el a munkáját.</p>
+
+            <p>
+                A SchrödingersCAT fordítástámogató (CAT) program Windowsra, Linuxra és macOS-re. XLIFF-fájlokat nyit
+                meg, egymás mellett mutatja a forrás- és a célszöveget, és fordítómemóriával, terminológiával és
+                minőségellenőrzéssel segít, a memoQ-éhoz hasonló billentyűs munkamenettel.
+            </p>
+
+            <p class="note">
+                <strong>Korai fejlesztési szakasz.</strong> Valódi XLIFF&nbsp;2-es munkákra már használható, de
+                lehetnek benne hiányosságok, ezért a fontos fájlokról érdemes másolatot tartani.
+            </p>
+
+            <div class="buttons">
+                <a class="button primary" href="https://github.com/frostynumeral/SchrodingersCAT/releases">Letöltés</a>
+                <a class="button" href="https://github.com/frostynumeral/SchrodingersCAT">Forráskód a GitHubon</a>
+            </div>
+
+            <h2>Funkciók</h2>
+
+            <h3>Adatvesztés nélküli XLIFF</h3>
+            <ul>
+                <li>Olvassa és írja az XLIFF 2.0, 2.1 és 2.2 formátumot: fájlokat, csoportokat, egységeket, szegmenseket, megjegyzéseket és szegmensállapotokat.</li>
+                <li>A címkék, annotációk, bővítmények és modulok változatlanul megmaradnak.</li>
+                <li>Soha nem dob el csendben adatot: amit nem tud ábrázolni, azt egyértelmű hibaüzenettel elutasítja, még mielőtt bármit kiírna.</li>
+                <li>Atomikusan ment, így egy sikertelen mentés soha nem hagy félig kiírt fájlt.</li>
+            </ul>
+
+            <h3>A szerkesztő</h3>
+            <ul>
+                <li>A címkék chipként jelennek meg. A védett címkék nem törölhetők, a másolatok pedig követik az XLIFF szerkesztési utasításait.</li>
+                <li>Gépelés közben címkeellenőrzés fut, amely jelzi a hiányzó, ismeretlen, pár nélküli vagy rossz sorrendű címkéket.</li>
+                <li>
+                    Az <kbd>F9</kbd> beszúrja a következő hiányzó címkét, a <kbd>Ctrl</kbd>+<kbd>Insert</kbd> átmásolja
+                    a forrásszöveget, a <kbd>Ctrl</kbd>+<kbd>Enter</kbd> jóváhagyja a szegmenst és továbblép.
+                </li>
+            </ul>
+
+            <h3>Fordítómemória</h3>
+            <ul>
+                <li>Részleges egyezések, a mostani forrásszövegtől való eltérések jelölésével; beszúráskor a címkék is átkerülnek.</li>
+                <li>A pontos egyezések automatikusan kitöltik az üres célszegmenseket, a jóváhagyott szegmensek pedig azonnal a memóriába kerülnek.</li>
+                <li>Konkordanciakeresés (<kbd>Ctrl</kbd>+<kbd>K</kbd>), amely a toldalékos alakokat is megtalálja.</li>
+                <li>TMX-import és -export, valamint ablak a bejegyzések szerkesztéséhez és tisztításához.</li>
+            </ul>
+
+            <h3>Terminológia</h3>
+            <ul>
+                <li>Terminológiai adatbázis; az aktuális szegmensben talált terminusok meg vannak jelölve a forrásszövegben.</li>
+                <li>A <kbd>Ctrl</kbd>+<kbd>T</kbd> beszúrja egy terminus fordítását, a <kbd>Ctrl</kbd>+<kbd>E</kbd> új terminust vesz fel a kijelölésből.</li>
+                <li>TBX- és CSV-import és -export.</li>
+            </ul>
+
+            <h3>Minőségellenőrzés</h3>
+            <ul>
+                <li>Számok, lefordítatlan vagy átmásolt szegmensek, nem fordítandónak jelölt szöveg és ismétlődő szavak.</li>
+                <li>Terminológia: nem a terminológiai adatbázis vagy a glosszárium szerint fordított terminusok, tiltott fordítások.</li>
+                <li>Következetlen fordítások a dokumentumon belül, szóközök, záró írásjelek, pár nélküli zárójelek és idézőjelek.</li>
+            </ul>
+
+            <h2>Letöltés</h2>
+            <p>
+                A Windowsos, linuxos és macOS-es (Intel és Apple Silicon) változatok a
+                <a href="https://github.com/frostynumeral/SchrodingersCAT/releases">kiadások oldalán</a> érhetők el.
+                A .NET-et is tartalmazzák, így semmi mást nem kell telepíteni: csomagolja ki, és indítsa el a
+                <code>SchrodingersCat.App</code> fájlt.
+            </p>
+            <p class="small">
+                A programfájlok egyelőre nincsenek aláírva, ezért a Windows SmartScreen és a macOS Gatekeeper első
+                indításkor figyelmeztet. macOS-en előbb futtassa a kicsomagolt mappán a
+                <code>xattr -dr com.apple.quarantine SchrodingersCat</code> parancsot.
+            </p>
+
+            <h2>Nyílt forráskód</h2>
+            <p>
+                A SchrödingersCAT C# nyelven, .NET-en, Avalonia felülettel készül, és
+                <a href="https://github.com/frostynumeral/SchrodingersCAT/blob/main/LICENSE">MIT licenc</a> alatt
+                érhető el. Hibajelentéseket és ötleteket
+                <a href="https://github.com/frostynumeral/SchrodingersCAT/issues">GitHub-issue-ként</a> szívesen
+                fogadok.
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">© 2026 Csillag Ádám János · <a href="/hu/">languageengineer.hu</a></div>
+    </footer>
+</body>
+</html>
