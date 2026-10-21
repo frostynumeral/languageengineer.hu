@@ -6,7 +6,8 @@ The source of [languageengineer.hu](https://languageengineer.hu): plain HTML and
 index.html, hu/index.html                                   home page (English, Hungarian)
 schrodingerscat/index.html, hu/schrodingerscat/index.html   SchrödingersCAT
 404.html                                                    not-found page (both languages)
-assets/                                                     style.css, favicon.svg
+assets/                                                     style.css, favicon.svg, apple-touch-icon.png, screenshots
+robots.txt, sitemap.xml                                     for search engines; add new pages (both languages) to the sitemap
 CNAME, .nojekyll                                            custom domain; serve files as they are
 ```
 
