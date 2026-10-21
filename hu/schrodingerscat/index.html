@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SchrödingersCAT · nyílt forráskódú fordítástámogató program</title>
     <meta name="description" content="A SchrödingersCAT nyílt forráskódú fordítástámogató (CAT) program: adatvesztés nélküli XLIFF 2-szerkesztő fordítómemóriával, terminológiai adatbázissal és minőségellenőrzéssel, Windowsra, Linuxra és macOS-re.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SchrödingersCAT · nyílt forráskódú fordítástámogató program">
+    <meta property="og:description" content="A SchrödingersCAT nyílt forráskódú fordítástámogató (CAT) program: adatvesztés nélküli XLIFF 2-szerkesztő fordítómemóriával, terminológiai adatbázissal és minőségellenőrzéssel, Windowsra, Linuxra és macOS-re.">
+    <meta property="og:url" content="https://languageengineer.hu/hu/schrodingerscat/">
+    <meta property="og:locale" content="hu_HU">
     <link rel="canonical" href="https://languageengineer.hu/hu/schrodingerscat/">
     <link rel="alternate" hreflang="en" href="https://languageengineer.hu/schrodingerscat/">
     <link rel="alternate" hreflang="hu" href="https://languageengineer.hu/hu/schrodingerscat/">
@@ -28,17 +33,17 @@
     <main id="main">
         <div class="wrap">
             <h1>SchrödingersCAT</h1>
-            <p class="lead">Nyílt forráskódú fordítástámogató program, amely soha nem veszíti el a munkáját.</p>
+            <p class="lead">Nyílt forráskódú fordítástámogató program, amellyel soha nem vész el a munkája.</p>
 
             <p>
                 A SchrödingersCAT fordítástámogató (CAT) program Windowsra, Linuxra és macOS-re. XLIFF-fájlokat nyit
-                meg, egymás mellett mutatja a forrás- és a célszöveget, és fordítómemóriával, terminológiával és
-                minőségellenőrzéssel segít, a memoQ-éhoz hasonló billentyűs munkamenettel.
+                meg, a forrás- és a célszöveget egymás mellett jeleníti meg, a munkát pedig fordítómemóriával,
+                terminológiával és minőségellenőrzéssel segíti. A billentyűparancsok a memoQ-éhoz hasonlóak.
             </p>
 
             <p class="note">
-                <strong>Korai fejlesztési szakasz.</strong> Valódi XLIFF&nbsp;2-es munkákra már használható, de
-                lehetnek benne hiányosságok, ezért a fontos fájlokról érdemes másolatot tartani.
+                <strong>Korai fejlesztési szakasz.</strong> Éles XLIFF&nbsp;2-es munkákra már használható, de
+                lehetnek benne hiányosságok, ezért a fontos fájlokról érdemes biztonsági másolatot készíteni.
             </p>
 
             <div class="buttons">
@@ -50,15 +55,15 @@
 
             <h3>Adatvesztés nélküli XLIFF</h3>
             <ul>
-                <li>Olvassa és írja az XLIFF 2.0, 2.1 és 2.2 formátumot: fájlokat, csoportokat, egységeket, szegmenseket, megjegyzéseket és szegmensállapotokat.</li>
-                <li>A címkék, annotációk, bővítmények és modulok változatlanul megmaradnak.</li>
-                <li>Soha nem dob el csendben adatot: amit nem tud ábrázolni, azt egyértelmű hibaüzenettel elutasítja, még mielőtt bármit kiírna.</li>
-                <li>Atomikusan ment, így egy sikertelen mentés soha nem hagy félig kiírt fájlt.</li>
+                <li>Beolvassa és menti az XLIFF 2.0, 2.1 és 2.2 formátumú fájlokat, megőrizve a fájl-, csoport-, egység- és szegmensszerkezetet, a megjegyzéseket és a szegmensállapotokat.</li>
+                <li>A címkék, annotációk, kiterjesztések és modulok mentéskor változatlanul megmaradnak.</li>
+                <li>Soha nem hagy el észrevétlenül adatot: amit nem tud ábrázolni, azt egyértelmű hibaüzenettel elutasítja, még mielőtt bármit kiírna.</li>
+                <li>A mentés atomi művelet, így egy sikertelen mentés soha nem hagy maga után félig kiírt fájlt.</li>
             </ul>
 
             <h3>A szerkesztő</h3>
             <ul>
-                <li>A címkék chipként jelennek meg. A védett címkék nem törölhetők, a másolatok pedig követik az XLIFF szerkesztési utasításait.</li>
+                <li>A címkék önálló elemként jelennek meg a szövegben. A védett címkék nem törölhetők, a címkék másolása pedig az XLIFF szerkesztési előírásait követi.</li>
                 <li>Gépelés közben címkeellenőrzés fut, amely jelzi a hiányzó, ismeretlen, pár nélküli vagy rossz sorrendű címkéket.</li>
                 <li>
                     Az <kbd>F9</kbd> beszúrja a következő hiányzó címkét, a <kbd>Ctrl</kbd>+<kbd>Insert</kbd> átmásolja
@@ -68,29 +73,29 @@
 
             <h3>Fordítómemória</h3>
             <ul>
-                <li>Részleges egyezések, a mostani forrásszövegtől való eltérések jelölésével; beszúráskor a címkék is átkerülnek.</li>
-                <li>A pontos egyezések automatikusan kitöltik az üres célszegmenseket, a jóváhagyott szegmensek pedig azonnal a memóriába kerülnek.</li>
-                <li>Konkordanciakeresés (<kbd>Ctrl</kbd>+<kbd>K</kbd>), amely a toldalékos alakokat is megtalálja.</li>
-                <li>TMX-import és -export, valamint ablak a bejegyzések szerkesztéséhez és tisztításához.</li>
+                <li>Részleges (fuzzy) találatok, az aktuális forrásszövegtől való eltérések kiemelésével; beszúráskor a címkék is átkerülnek.</li>
+                <li>A pontos találatok automatikusan kitöltik az üres célszegmenseket, a jóváhagyott szegmensek pedig azonnal a memóriába kerülnek.</li>
+                <li>Konkordanciakeresés (<kbd>Ctrl</kbd>+<kbd>K</kbd>), amely a szókezdetekre keres, így a toldalékos alakokat is megtalálja.</li>
+                <li>TMX-import és -export, valamint külön ablak a bejegyzések szerkesztéséhez és karbantartásához.</li>
             </ul>
 
             <h3>Terminológia</h3>
             <ul>
-                <li>Terminológiai adatbázis; az aktuális szegmensben talált terminusok meg vannak jelölve a forrásszövegben.</li>
-                <li>A <kbd>Ctrl</kbd>+<kbd>T</kbd> beszúrja egy terminus fordítását, a <kbd>Ctrl</kbd>+<kbd>E</kbd> új terminust vesz fel a kijelölésből.</li>
+                <li>Terminológiai adatbázis: a program kiemeli az aktuális szegmens forrásszövegében talált terminusokat.</li>
+                <li>A <kbd>Ctrl</kbd>+<kbd>T</kbd>-vel kiválaszthatja és beszúrhatja egy terminus fordítását, a <kbd>Ctrl</kbd>+<kbd>E</kbd> új terminust vesz fel a kijelölésből.</li>
                 <li>TBX- és CSV-import és -export.</li>
             </ul>
 
             <h3>Minőségellenőrzés</h3>
             <ul>
-                <li>Számok, lefordítatlan vagy átmásolt szegmensek, nem fordítandónak jelölt szöveg és ismétlődő szavak.</li>
+                <li>Számok, lefordítatlan szegmensek, a forrással megegyező célszövegek, nem fordítandónak jelölt szöveg és ismétlődő szavak.</li>
                 <li>Terminológia: nem a terminológiai adatbázis vagy a glosszárium szerint fordított terminusok, tiltott fordítások.</li>
                 <li>Következetlen fordítások a dokumentumon belül, szóközök, záró írásjelek, pár nélküli zárójelek és idézőjelek.</li>
             </ul>
 
             <h2>Letöltés</h2>
             <p>
-                A Windowsos, linuxos és macOS-es (Intel és Apple Silicon) változatok a
+                A windowsos, linuxos és macOS-es (Intel és Apple silicon) változatok a
                 <a href="https://github.com/frostynumeral/SchrodingersCAT/releases">kiadások oldalán</a> érhetők el.
                 A .NET-et is tartalmazzák, így semmi mást nem kell telepíteni: csomagolja ki, és indítsa el a
                 <code>SchrodingersCat.App</code> fájlt.
@@ -103,10 +108,10 @@
 
             <h2>Nyílt forráskód</h2>
             <p>
-                A SchrödingersCAT C# nyelven, .NET-en, Avalonia felülettel készül, és
-                <a href="https://github.com/frostynumeral/SchrodingersCAT/blob/main/LICENSE">MIT licenc</a> alatt
-                érhető el. Hibajelentéseket és ötleteket
-                <a href="https://github.com/frostynumeral/SchrodingersCAT/issues">GitHub-issue-ként</a> szívesen
+                A SchrödingersCAT C# nyelven, .NET-en, Avalonia keretrendszerrel készül, és
+                <a href="https://github.com/frostynumeral/SchrodingersCAT/blob/main/LICENSE">MIT-licenccel</a>
+                érhető el. Hibajelentéseket és ötleteket a projekt
+                <a href="https://github.com/frostynumeral/SchrodingersCAT/issues">GitHub Issues oldalán</a> szívesen
                 fogadok.
             </p>
         </div>

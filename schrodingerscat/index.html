@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SchrödingersCAT · an open-source CAT tool</title>
     <meta name="description" content="SchrödingersCAT is an open-source computer-assisted translation tool: a lossless XLIFF 2 editor with translation memory, a termbase and quality checks, for Windows, Linux and macOS.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SchrödingersCAT · an open-source CAT tool">
+    <meta property="og:description" content="SchrödingersCAT is an open-source computer-assisted translation tool: a lossless XLIFF 2 editor with translation memory, a termbase and quality checks, for Windows, Linux and macOS.">
+    <meta property="og:url" content="https://languageengineer.hu/schrodingerscat/">
+    <meta property="og:locale" content="en_GB">
     <link rel="canonical" href="https://languageengineer.hu/schrodingerscat/">
     <link rel="alternate" hreflang="en" href="https://languageengineer.hu/schrodingerscat/">
     <link rel="alternate" hreflang="hu" href="https://languageengineer.hu/hu/schrodingerscat/">
@@ -70,20 +75,20 @@
             <ul>
                 <li>Fuzzy matches with the differences from the current source marked; codes are carried over when you insert one.</li>
                 <li>Exact matches fill empty targets automatically, and confirmed segments are stored straight away.</li>
-                <li>Concordance search (<kbd>Ctrl</kbd>+<kbd>K</kbd>) that finds inflected forms.</li>
+                <li>Concordance search (<kbd>Ctrl</kbd>+<kbd>K</kbd>) that matches word beginnings, so suffixed forms are found too.</li>
                 <li>TMX import and export, and a window for editing and cleaning up entries.</li>
             </ul>
 
             <h3>Terminology</h3>
             <ul>
                 <li>A termbase with the terms found in the current segment marked in the source.</li>
-                <li><kbd>Ctrl</kbd>+<kbd>T</kbd> inserts a term's translation, <kbd>Ctrl</kbd>+<kbd>E</kbd> adds a new term from the selection.</li>
+                <li><kbd>Ctrl</kbd>+<kbd>T</kbd> picks a term translation to insert, <kbd>Ctrl</kbd>+<kbd>E</kbd> adds a new term from the selection.</li>
                 <li>TBX and CSV import and export.</li>
             </ul>
 
             <h3>Quality checks</h3>
             <ul>
-                <li>Numbers, untranslated or copied segments, text marked not to translate, and repeated words.</li>
+                <li>Numbers, untranslated segments, targets identical to the source, text marked not to translate, and repeated words.</li>
                 <li>Terminology: terms not translated as the termbase or glossary says, and forbidden translations.</li>
                 <li>Inconsistent translations across the document, whitespace, end punctuation and unpaired brackets or quotes.</li>
             </ul>
